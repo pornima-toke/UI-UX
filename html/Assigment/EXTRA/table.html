@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Table Assignments</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: center;
+        }
+        .alt-row tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 1. Table with 3x3 student marks -->
+<h3>1. Student Marks (3x3)</h3>
+<table>
+    <tr><th>Math</th><th>Science</th><th>English</th></tr>
+    <tr><td>85</td><td>90</td><td>78</td></tr>
+    <tr><td>76</td><td>88</td><td>82</td></tr>
+</table>
+
+<!-- 2. Monthly expenses -->
+<h3>2. Monthly Expenses</h3>
+<table>
+    <tr><th>Category</th><th>Amount</th></tr>
+    <tr><td>Rent</td><td>10000</td></tr>
+    <tr><td>Food</td><td>5000</td></tr>
+    <tr><td>Travel</td><td>2000</td></tr>
+</table>
+
+<!-- 3. Class timetable -->
+<h3>3. Class Timetable</h3>
+<table>
+    <tr><th>Day</th><th>9-10</th><th>10-11</th><th>11-12</th></tr>
+    <tr><td>Mon</td><td>Math</td><td>English</td><td>Science</td></tr>
+    <tr><td>Tue</td><td>Physics</td><td>Chemistry</td><td>Biology</td></tr>
+</table>
+
+<!-- 4. Rowspan & Colspan for report card -->
+<h3>4. Report Card</h3>
+<table>
+    <tr><th rowspan="2">Name</th><th colspan="3">Marks</th></tr>
+    <tr><th>Math</th><th>Science</th><th>English</th></tr>
+    <tr><td>John</td><td>85</td><td>90</td><td>78</td></tr>
+</table>
+
+<!-- 5. Product price list -->
+<h3>5. Product Price List</h3>
+<table>
+    <tr><th>Product</th><th>Price</th></tr>
+    <tr><td>Shirt</td><td>500</td></tr>
+    <tr><td>Jeans</td><td>1200</td></tr>
+</table>
+
+<!-- 6. Border & cell padding -->
+<h3>6. Border & Cell Padding</h3>
+<table style="border-spacing: 10px;">
+    <tr><th>Item</th><th>Qty</th></tr>
+    <tr><td>Pen</td><td>10</td></tr>
+</table>
+
+<!-- 7. Alternate row colors -->
+<h3>7. Alternate Row Colors</h3>
+<table class="alt-row">
+    <tr><th>Name</th><th>Age</th></tr>
+    <tr><td>Amit</td><td>20</td></tr>
+    <tr><td>Sita</td><td>22</td></tr>
+</table>
+
+<!-- 8. Header & Footer -->
+<h3>8. Header & Footer</h3>
+<table>
+    <thead><tr><th>Item</th><th>Price</th></tr></thead>
+    <tbody><tr><td>Book</td><td>200</td></tr></tbody>
+    <tfoot><tr><td>Total</td><td>200</td></tr></tfoot>
+</table>
+
+<!-- 9. 10 students marks -->
+<h3>9. 10 Students Marks</h3>
+<table>
+    <tr><th>Name</th><th>Math</th><th>Science</th><th>English</th></tr>
+    <tr><td>Student1</td><td>80</td><td>70</td><td>90</td></tr>
+    <tr><td>Student2</td><td>75</td><td>85</td><td>88</td></tr>
+    <!-- Add up to Student10 -->
+</table>
+
+<!-- 10. Merged header -->
+<h3>10. Merged Header</h3>
+<table>
+    <tr><th colspan="3">Employee Details</th></tr>
+    <tr><th>ID</th><th>Name</th><th>Salary</th></tr>
+    <tr><td>1</td><td>Amit</td><td>30000</td></tr>
+</table>
+
+<!-- 11. Library books -->
+<h3>11. Library Books</h3>
+<table>
+    <tr><th>Title</th><th>Author</th><th>Year</th></tr>
+    <tr><td>Book1</td><td>Author1</td><td>2020</td></tr>
+</table>
+
+<!-- 12. Sports tournament -->
+<h3>12. Sports Tournament</h3>
+<table>
+    <tr><th>Match</th><th>Team A</th><th>Team B</th></tr>
+    <tr><td>1</td><td>India</td><td>Australia</td></tr>
+</table>
+
+<!-- 13. Train timings -->
+<h3>13. Train Timings</h3>
+<table>
+    <tr><th>Train</th><th>From</th><th>To</th><th>Time</th></tr>
+    <tr><td>101</td><td>Mumbai</td><td>Pune</td><td>10:00</td></tr>
+</table>
+
+<!-- 14. Bus schedule -->
+<h3>14. Bus Schedule</h3>
+<table>
+    <tr><th>Bus</th><th>From</th><th>To</th><th>Time</th></tr>
+    <tr><td>501</td><td>City A</td><td>City B</td><td>8:00</td></tr>
+</table>
+
+<!-- 15. Employee details -->
+<h3>15. Employee Details</h3>
+<table>
+    <tr><th>ID</th><th>Name</th><th>Dept</th></tr>
+    <tr><td>1</td><td>Ravi</td><td>HR</td></tr>
+</table>
+
+<!-- 16. Shopping bill -->
+<h3>16. Shopping Bill</h3>
+<table>
+    <tr><th>Item</th><th>Price</th><th>Qty</th><th>Total</th></tr>
+    <tr><td>Milk</td><td>50</td><td>2</td><td>100</td></tr>
+</table>
+
+<!-- 17. Weather details -->
+<h3>17. Weather Details</h3>
+<table>
+    <tr><th>Day</th><th>Temp</th><th>Condition</th></tr>
+    <tr><td>Mon</td><td>30°C</td><td>Sunny</td></tr>
+</table>
+
+<!-- 18. Top 10 companies -->
+<h3>18. Top 10 Companies by Revenue</h3>
+<table>
+    <tr><th>Company</th><th>Revenue</th></tr>
+    <tr><td>Apple</td><td>$300B</td></tr>
+</table>
+
+<!-- 19. Cricket scorecard -->
+<h3>19. Cricket Match Scorecard</h3>
+<table>
+    <tr><th>Player</th><th>Runs</th></tr>
+    <tr><td>Kohli</td><td>80</td></tr>
+</table>
+
+<!-- 20. Football standings -->
+<h3>20. Football League</h3>
+<table>
+    <tr><th>Team</th><th>Points</th></tr>
+    <tr><td>Team A</td><td>30</td></tr>
+</table>
+
+<!-- 21. Periodic table elements -->
+<h3>21. Periodic Table</h3>
+<table>
+    <tr><th>Element</th><th>Symbol</th></tr>
+    <tr><td>Hydrogen</td><td>H</td></tr>
+</table>
+
+<!-- 22. Study timetable -->
+<h3>22. Study Timetable</h3>
+<table>
+    <tr><th>Day</th><th>Subject</th></tr>
+    <tr><td>Mon</td><td>Math</td></tr>
+</table>
+
+<!-- 23. Nested tables -->
+<h3>23. Nested Tables</h3>
+<table>
+    <tr>
+        <td>
+            <table>
+                <tr><td>Inner 1</td></tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- 24. Course curriculum -->
+<h3>24. Course Curriculum</h3>
+<table>
+    <tr><th>Module</th><th>Topics</th></tr>
+    <tr><td>HTML</td><td>Basics, Forms</td></tr>
+</table>
+
+<!-- 25. Famous monuments -->
+<h3>25. Monuments</h3>
+<table>
+    <tr><th>Monument</th><th>Location</th></tr>
+    <tr><td>Taj Mahal</td><td>Agra</td></tr>
+</table>
+
+<!-- 26. Olympic medal tally -->
+<h3>26. Olympic Medal Tally</h3>
+<table>
+    <tr><th>Country</th><th>Gold</th><th>Silver</th><th>Bronze</th></tr>
+    <tr><td>India</td><td>2</td><td>3</td><td>1</td></tr>
+</table>
+
+<!-- 27. Currency exchange -->
+<h3>27. Currency Exchange</h3>
+<table>
+    <tr><th>Currency</th><th>Rate</th></tr>
+    <tr><td>USD</td><td>83 INR</td></tr>
+</table>
+
+<!-- 28. Exam schedule -->
+<h3>28. Exam Schedule</h3>
+<table>
+    <tr><th>Subject</th><th>Date</th></tr>
+    <tr><td>Math</td><td>1-Apr</td></tr>
+</table>
+
+<!-- 29. Subject teachers -->
+<h3>29. Subject Teachers</h3>
+<table>
+    <tr><th>Subject</th><th>Teacher</th></tr>
+    <tr><td>English</td><td>Mr. Sharma</td></tr>
+</table>
+
+<!-- 30. Marksheet with percentage -->
+<h3>30. Marksheet</h3>
+<table>
+    <tr><th>Name</th><th>Math</th><th>Science</th><th>Total</th><th>%</th></tr>
+    <tr><td>Ravi</td><td>80</td><td>70</td><td>150</td><td>75%</td></tr>
+</table>
+
+</body>
+</html>

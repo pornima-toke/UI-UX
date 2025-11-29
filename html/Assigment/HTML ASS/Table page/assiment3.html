@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML Tables Collection</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; margin: 20px; background:#f7f7f7; color:#222; }
+    h1 { text-align:center; margin-bottom:10px }
+    section { background: #fff; padding: 12px 16px; margin: 14px 0; border-radius:8px; box-shadow:0 1px 3px rgba(0,0,0,0.06); }
+    table { width:100%; border-collapse: collapse; margin:8px 0; }
+    th, td { border:1px solid #bbb; padding:8px; text-align:left; }
+    th { background:#efefef; }
+    .small { width:40%; }
+    .center { text-align:center; }
+    /* alternate row background */
+    .alt-rows tr:nth-child(even) { background:#fbfbfb; }
+    /* table with bigger border and padding */
+    .big-border th, .big-border td { border:2px solid #666; padding:14px; }
+    /* header + footer styles */
+    tfoot td { background:#f4f4f4; font-weight:600; }
+    /* timetable fixed widths */
+    .timetable th, .timetable td { text-align:center; }
+    /* merged header */
+    .merged thead th { text-align:center; }
+    /* nested tables */
+    .nested td { vertical-align:top; }
+    .nested table { width:100%; }
+    /* small helper */
+    .mono { font-family: monospace; }
+  </style>
+</head>
+<body>
+  <h1>HTML Tables - Collection of Examples</h1>
+
+  <!-- 1. 3x3 student marks -->
+  <section>
+    <h2>1. 3×3 Student Marks</h2>
+    <table>
+      <thead>
+        <tr><th>Student</th><th>Math</th><th>Science</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Asha</td><td>78</td><td>85</td></tr>
+        <tr><td>Vikram</td><td>92</td><td>88</td></tr>
+        <tr><td>Neha</td><td>67</td><td>73</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 2. Monthly expenses -->
+  <section>
+    <h2>2. Monthly Expenses</h2>
+    <table>
+      <thead><tr><th>Category</th><th>Amount (₹)</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Rent</td><td>15000</td><td>Apartment</td></tr>
+        <tr><td>Groceries</td><td>4000</td><td></td></tr>
+        <tr><td>Utilities</td><td>2500</td><td>Electricity & Water</td></tr>
+        <tr><td>Transport</td><td>1200</td><td></td></tr>
+      </tbody>
+      <tfoot><tr><td>Total</td><td>22700</td><td></td></tr></tfoot>
+    </table>
+  </section>
+
+  <!-- 3. Class timetable -->
+  <section>
+    <h2>3. Class Timetable</h2>
+    <table class="timetable">
+      <thead><tr><th>Time</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr></thead>
+      <tbody>
+        <tr><td>9:00-10:00</td><td>Math</td><td>Eng</td><td>Physics</td><td>Math</td><td>Chemistry</td></tr>
+        <tr><td>10:15-11:15</td><td>Bio</td><td>Math</td><td>Eng</td><td>History</td><td>PE</td></tr>
+        <tr><td>11:30-12:30</td><td>Computer</td><td>Physics</td><td>Chemistry</td><td>Art</td><td>Computer</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 4. Rowspan & Colspan student report card -->
+  <section>
+    <h2>4. Student Report Card (rowspan & colspan)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">Student</th>
+          <th colspan="3">Marks</th>
+          <th rowspan="2">Total</th>
+        </tr>
+        <tr>
+          <th>Math</th><th>Science</th><th>English</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Ravi</td><td>85</td><td>78</td><td>90</td><td>253</td></tr>
+        <tr><td>Sana</td><td>72</td><td>80</td><td>77</td><td>229</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 5. Product price list -->
+  <section>
+    <h2>5. Product Price List</h2>
+    <table>
+      <thead><tr><th>Product</th><th>Category</th><th>Price (₹)</th></tr></thead>
+      <tbody>
+        <tr><td>Wireless Mouse</td><td>Electronics</td><td>699</td></tr>
+        <tr><td>Notebook (A4)</td><td>Stationery</td><td>120</td></tr>
+        <tr><td>Water Bottle</td><td>Accessories</td><td>250</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 6. Table with border and cell padding -->
+  <section>
+    <h2>6. Table with Border & Cell Padding</h2>
+    <table class="big-border">
+      <thead><tr><th>Item</th><th>Description</th><th>Qty</th></tr></thead>
+      <tbody>
+        <tr><td>Pen</td><td>Blue gel pen</td><td>10</td></tr>
+        <tr><td>Stapler</td><td>Standard desktop</td><td>1</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 7. Alternate row background -->
+  <section>
+    <h2>7. Table with Alternate Row Background</h2>
+    <table class="alt-rows">
+      <thead><tr><th>Day</th><th>Task</th></tr></thead>
+      <tbody>
+        <tr><td>Mon</td><td>Study Java</td></tr>
+        <tr><td>Tue</td><td>Practice HTML</td></tr>
+        <tr><td>Wed</td><td>Project work</td></tr>
+        <tr><td>Thu</td><td>Revision</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 8. Table with header and footer rows -->
+  <section>
+    <h2>8. Table with Header and Footer Rows</h2>
+    <table>
+      <thead><tr><th>Service</th><th>Charge (₹)</th></tr></thead>
+      <tbody>
+        <tr><td>Registration</td><td>500</td></tr>
+        <tr><td>Certificate</td><td>150</td></tr>
+      </tbody>
+      <tfoot><tr><td>Total</td><td>650</td></tr></tfoot>
+    </table>
+  </section>
+
+  <!-- 9. 10 students 3 subjects -->
+  <section>
+    <h2>9. 10 Students - Marks in 3 Subjects</h2>
+    <table>
+      <thead><tr><th>Roll</th><th>Name</th><th>Math</th><th>Science</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>A</td><td>78</td><td>85</td><td>80</td></tr>
+        <tr><td>2</td><td>B</td><td>82</td><td>79</td><td>88</td></tr>
+        <tr><td>3</td><td>C</td><td>91</td><td>90</td><td>92</td></tr>
+        <tr><td>4</td><td>D</td><td>60</td><td>65</td><td>70</td></tr>
+        <tr><td>5</td><td>E</td><td>74</td><td>71</td><td>68</td></tr>
+        <tr><td>6</td><td>F</td><td>88</td><td>84</td><td>86</td></tr>
+        <tr><td>7</td><td>G</td><td>55</td><td>60</td><td>58</td></tr>
+        <tr><td>8</td><td>H</td><td>95</td><td>97</td><td>94</td></tr>
+        <tr><td>9</td><td>I</td><td>70</td><td>72</td><td>69</td></tr>
+        <tr><td>10</td><td>J</td><td>80</td><td>78</td><td>82</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 10. Table with merged header cells -->
+  <section>
+    <h2>10. Table with Merged Header Cells</h2>
+    <table class="merged">
+      <thead>
+        <tr>
+          <th rowspan="2">ID</th>
+          <th colspan="2">Personal</th>
+          <th rowspan="2">Role</th>
+        </tr>
+        <tr>
+          <th>Name</th>
+          <th>City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>101</td><td>Ramesh</td><td>Pune</td><td>Manager</td></tr>
+        <tr><td>102</td><td>Priya</td><td>Mumbai</td><td>Developer</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 11. Library books -->
+  <section>
+    <h2>11. Library Books</h2>
+    <table>
+      <thead><tr><th>ISBN</th><th>Title</th><th>Author</th><th>Available</th></tr></thead>
+      <tbody>
+        <tr><td>978-0-123</td><td>Learn Java</td><td>R. Sharma</td><td>Yes</td></tr>
+        <tr><td>978-0-456</td><td>HTML & CSS</td><td>S. Kaur</td><td>No</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 12. Sports tournament schedule -->
+  <section>
+    <h2>12. Sports Tournament Schedule</h2>
+    <table>
+      <thead><tr><th>Match</th><th>Date</th><th>Time</th><th>Venue</th></tr></thead>
+      <tbody>
+        <tr><td>Team A vs Team B</td><td>2025-11-10</td><td>10:00</td><td>Ground 1</td></tr>
+        <tr><td>Team C vs Team D</td><td>2025-11-11</td><td>14:00</td><td>Ground 2</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 13. Train timings -->
+  <section>
+    <h2>13. Train Timings</h2>
+    <table>
+      <thead><tr><th>Train No</th><th>Route</th><th>Arrival</th><th>Departure</th></tr></thead>
+      <tbody>
+        <tr><td>19001</td><td>CityA - CityB</td><td>08:30</td><td>08:40</td></tr>
+        <tr><td>19002</td><td>CityB - CityC</td><td>12:15</td><td>12:25</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 14. Bus schedule -->
+  <section>
+    <h2>14. Bus Schedule</h2>
+    <table>
+      <thead><tr><th>Bus</th><th>From</th><th>To</th><th>Departure</th></tr></thead>
+      <tbody>
+        <tr><td>23A</td><td>Station</td><td>Market</td><td>07:00</td></tr>
+        <tr><td>11B</td><td>Station</td><td>Hill</td><td>07:30</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 15. Employee details -->
+  <section>
+    <h2>15. Employee Details</h2>
+    <table>
+      <thead><tr><th>ID</th><th>Name</th><th>Dept</th><th>Salary (₹)</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Amit</td><td>HR</td><td>35000</td></tr>
+        <tr><td>2</td><td>Leena</td><td>IT</td><td>55000</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 16. Shopping bill -->
+  <section>
+    <h2>16. Shopping Bill</h2>
+    <table>
+      <thead><tr><th>Item</th><th>Price</th><th>Qty</th><th>Amount</th></tr></thead>
+      <tbody>
+        <tr><td>Shampoo</td><td>120</td><td>1</td><td>120</td></tr>
+        <tr><td>Bread</td><td>30</td><td>2</td><td>60</td></tr>
+      </tbody>
+      <tfoot><tr><td colspan="3">Total</td><td>180</td></tr></tfoot>
+    </table>
+  </section>
+
+  <!-- 17. Weather for 7 days -->
+  <section>
+    <h2>17. Weather Forecast (7 days)</h2>
+    <table>
+      <thead><tr><th>Day</th><th>High (°C)</th><th>Low (°C)</th><th>Condition</th></tr></thead>
+      <tbody>
+        <tr><td>Mon</td><td>30</td><td>22</td><td>Sunny</td></tr>
+        <tr><td>Tue</td><td>29</td><td>21</td><td>Cloudy</td></tr>
+        <tr><td>Wed</td><td>28</td><td>20</td><td>Rain</td></tr>
+        <tr><td>Thu</td><td>27</td><td>19</td><td>Cloudy</td></tr>
+        <tr><td>Fri</td><td>31</td><td>23</td><td>Sunny</td></tr>
+        <tr><td>Sat</td><td>32</td><td>24</td><td>Sunny</td></tr>
+        <tr><td>Sun</td><td>30</td><td>22</td><td>Partly Cloudy</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 18. Top 10 companies with revenue -->
+  <section>
+    <h2>18. Top 10 Companies - Revenue (sample)</h2>
+    <table>
+      <thead><tr><th>Rank</th><th>Company</th><th>Revenue (₹ crores)</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Company A</td><td>120000</td></tr>
+        <tr><td>2</td><td>Company B</td><td>95000</td></tr>
+        <tr><td>3</td><td>Company C</td><td>82000</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 19. Cricket match scorecard -->
+  <section>
+    <h2>19. Cricket Match Scorecard</h2>
+    <table>
+      <thead><tr><th>Batsman</th><th>Runs</th><th>Balls</th><th>4s</th><th>6s</th></tr></thead>
+      <tbody>
+        <tr><td>Player 1</td><td>56</td><td>48</td><td>7</td><td>1</td></tr>
+        <tr><td>Player 2</td><td>34</td><td>29</td><td>4</td><td>0</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 20. Football league standings -->
+  <section>
+    <h2>20. Football League Standings</h2>
+    <table>
+      <thead><tr><th>Pos</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>Pts</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Team X</td><td>10</td><td>8</td><td>1</td><td>1</td><td>25</td></tr>
+        <tr><td>2</td><td>Team Y</td><td>10</td><td>7</td><td>2</td><td>1</td><td>23</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 21. Periodic table elements (partial) -->
+  <section>
+    <h2>21. Periodic Table Elements (sample)</h2>
+    <table>
+      <thead><tr><th>Atomic No</th><th>Symbol</th><th>Name</th><th>Atomic Weight</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>H</td><td>Hydrogen</td><td>1.008</td></tr>
+        <tr><td>6</td><td>C</td><td>Carbon</td><td>12.011</td></tr>
+        <tr><td>8</td><td>O</td><td>Oxygen</td><td>15.999</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 22. Monthly study timetable -->
+  <section>
+    <h2>22. Monthly Study Timetable (sample week view)</h2>
+    <table>
+      <thead><tr><th>Week</th><th>Mon-Fri</th><th>Sat</th><th>Sun</th></tr></thead>
+      <tbody>
+        <tr><td>Week 1</td><td>2 hrs/day (Math)</td><td>3 hrs (Project)</td><td>Revision</td></tr>
+        <tr><td>Week 2</td><td>2 hrs/day (Java)</td><td>Practice</td><td>Mock Test</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 23. Nested tables inside cells -->
+  <section>
+    <h2>23. Nested Tables Inside Cells</h2>
+    <table class="nested">
+      <thead><tr><th>Order</th><th>Items</th><th>Total</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>001</td>
+          <td>
+            <table>
+              <tr><th>Product</th><th>Qty</th></tr>
+              <tr><td>Pen</td><td>2</td></tr>
+              <tr><td>Notebook</td><td>1</td></tr>
+            </table>
+          </td>
+          <td>250</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 24. Online course curriculum -->
+  <section>
+    <h2>24. Online Course Curriculum</h2>
+    <table>
+      <thead><tr><th>Module</th><th>Topics</th><th>Duration</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Intro & Basics</td><td>2 weeks</td></tr>
+        <tr><td>2</td><td>Intermediate</td><td>3 weeks</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 25. Famous monuments and locations -->
+  <section>
+    <h2>25. Famous Monuments & Locations</h2>
+    <table>
+      <thead><tr><th>Monument</th><th>Location</th><th>Country</th></tr></thead>
+      <tbody>
+        <tr><td>Taj Mahal</td><td>Agra</td><td>India</td></tr>
+        <tr><td>Eiffel Tower</td><td>Paris</td><td>France</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 26. Olympic medal tally -->
+  <section>
+    <h2>26. Olympic Medal Tally (sample)</h2>
+    <table>
+      <thead><tr><th>Country</th><th>Gold</th><th>Silver</th><th>Bronze</th><th>Total</th></tr></thead>
+      <tbody>
+        <tr><td>Country A</td><td>10</td><td>5</td><td>8</td><td>23</td></tr>
+        <tr><td>Country B</td><td>8</td><td>10</td><td>6</td><td>24</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 27. Currency exchange rates -->
+  <section>
+    <h2>27. Currency Exchange Rates (sample)</h2>
+    <table>
+      <thead><tr><th>Currency</th><th>Buy</th><th>Sell</th></tr></thead>
+      <tbody>
+        <tr><td>USD</td><td>83.50</td><td>84.00</td></tr>
+        <tr><td>EUR</td><td>90.20</td><td>90.80</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 28. Exam schedule -->
+  <section>
+    <h2>28. Exam Schedule</h2>
+    <table>
+      <thead><tr><th>Subject</th><th>Date</th><th>Time</th></tr></thead>
+      <tbody>
+        <tr><td>Mathematics</td><td>2025-12-01</td><td>10:00 AM</td></tr>
+        <tr><td>Science</td><td>2025-12-03</td><td>10:00 AM</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 29. Subject teachers -->
+  <section>
+    <h2>29. Subject Teachers</h2>
+    <table>
+      <thead><tr><th>Subject</th><th>Teacher</th><th>Contact</th></tr></thead>
+      <tbody>
+        <tr><td>Math</td><td>Mr. Shah</td><td>shah@example.com</td></tr>
+        <tr><td>English</td><td>Ms. Roy</td><td>roy@example.com</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 30. Marksheet with percentage calculation -->
+  <section>
+    <h2>30. Marksheet with Percentage Calculation</h2>
+    <table id="marksheet">
+      <thead><tr><th>Subject</th><th>Marks Obtained</th><th>Max Marks</th></tr></thead>
+      <tbody>
+        <tr><td>Math</td><td class="obtained">78</td><td class="max">100</td></tr>
+        <tr><td>Science</td><td class="obtained">85</td><td class="max">100</td></tr>
+        <tr><td>English</td><td class="obtained">72</td><td class="max">100</td></tr>
+      </tbody>
+      <tfoot>
+        <tr><td>Total</td><td id="totalObtained"></td><td id="totalMax"></td></tr>
+        <tr><td>Percentage</td><td id="percentage" colspan="2"></td></tr>
+      </tfoot>
+    </table>
+    <script>
+      (function(){
+        const obtainedEls = document.querySelectorAll('#marksheet .obtained');
+        const maxEls = document.querySelectorAll('#marksheet .max');
+        let totalObt=0, totalMax=0;
+        obtainedEls.forEach(e => totalObt += Number(e.textContent));
+        maxEls.forEach(e => totalMax += Number(e.textContent));
+        const perc = (totalObt / totalMax) * 100;
+        document.getElementById('totalObtained').textContent = totalObt;
+        document.getElementById('totalMax').textContent = totalMax;
+        document.getElementById('percentage').textContent = perc.toFixed(2) + '%';
+      })();
+    </script>
+  </section>
+
+  <footer style="text-align:center; margin-top:18px; font-size:0.9em; color:#666">Created for practice — all data sample only.</footer>
+</body>
+</html>

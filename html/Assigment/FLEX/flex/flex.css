@@ -1,0 +1,37 @@
+* body{
+        font-family:Arial, sans-serif;
+        padding:40px;
+        background:#fff;
+    }
+
+    h2{
+        font-size:18px;
+        margin-bottom:10px;
+        letter-spacing:2px;
+    }
+
+    .box{
+        width:450px;
+        height:170px;
+        border:1px dashed #bbb;
+        display:flex;
+        flex-wrap:wrap;
+        gap:10px;
+        padding:10px;
+        margin-bottom:40px;
+        background:#fafafa;
+    }
+
+    .item{
+        height:25px;
+        background:#1e57d6;
+        border-radius:3px;
+    }
+
+    /* different widths */
+    .w1{ width:120px; }
+    .w2{ width:70px; }
+    .w3{ width:180px; }
+
+    /* layout groups */
+    .row{ display:flex; gap:10px; }

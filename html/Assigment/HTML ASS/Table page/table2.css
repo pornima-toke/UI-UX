@@ -1,0 +1,36 @@
+.container {
+        width: 80%;
+        min-height: 100px;
+        border: 1px solid #000;
+        margin: auto;
+      }
+      .box {
+        width: 90%;
+        min-height: 100px;
+
+        padding: 10px;
+        margin: auto;
+      }
+      table {
+        width: 100%;
+        padding: 10px;
+        border-collapse: collapse;
+      }
+      table tr,
+      td,
+      th,
+      tr {
+        border: 1px solid lightgray;
+        text-align: center;
+        padding: 5px;
+        font-weight: bold;
+      }
+      #table-report {
+        padding: 10px;
+        font-size: 22px;
+        background-color: royalblue;
+        color: white;
+      }
+      .data td {
+        font-weight: normal;
+      }

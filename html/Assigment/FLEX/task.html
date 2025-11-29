@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sectioned Layout</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
+  body{background:#d1d1d1;padding:20px;}
+
+  .section{width:100%;padding:25px;text-align:center;font-size:22px;font-weight:bold;color:#000;}
+  .header{background:#7c8faa;}
+  .slider{background:#eeeeee;}
+  .spacer{background:#b98c82;}
+
+  .articles-wrapper{
+    padding:25px;
+    background:#a7c3b2;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(180px,1fr));
+    gap:20px;
+  }
+
+  .article{
+    background:#8d80ad;
+    padding:40px 10px;
+    border-radius:6px;
+    text-align:center;
+    color:#000;
+    font-weight:600;
+  }
+
+  /* SPECIAL LARGE BLOCK */
+  .big-block{
+    grid-column:1/-1;
+    background:#8d80ad;
+    padding:80px 10px;
+    border-radius:6px;
+  }
+
+  /* Right column two stack */
+  .side-stack{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .copyright{
+    margin-top:25px;
+    background:#bbbbbb;
+    padding:20px;
+    text-align:center;
+    font-weight:bold;
+  }
+</style>
+</head>
+<body>
+
+  <div class="section header">Header</div>
+  <div class="section slider">Slider-Images</div>
+  <div class="section spacer">Spacer</div>
+
+  <!-- ARTICLE GRID BLOCKS -->
+  <div class="articles-wrapper">
+    <div class="article">Article</div>
+    <div class="article">Article</div>
+    <div class="article">Article</div>
+  </div>
+
+  <div class="articles-wrapper" style="background:#d4c288;">
+    <div class="article">Article</div>
+    <div class="article">Article</div>
+    <div class="article">Article</div>
+    <div class="article">Article</div>
+  </div>
+
+  <div class="articles-wrapper" style="background:#c699a1;">
+    <div class="big-block">Article</div>
+
+    <div class="side-stack">
+      <div class="article">Article</div>
+      <div class="article">Article</div>
+    </div>
+  </div>
+
+  <div class="articles-wrapper" style="background:#a7c3b2;">
+    <div class="article">Article</div>
+    <div class="article">Article</div>
+    <div class="article">Article</div>
+  </div>
+
+  <div class="copyright">Copyright</div>
+
+</body>
+</html>

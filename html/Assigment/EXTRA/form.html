@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+     <!-- 1. Login form -->
+  <section id="f1">
+    <h2> Login form</h2>
+    <div>
+        <label for="login-user">Username</label>
+        <input id="login-user" name="udername" type="text" required placeholder="Enter username"/>
+    </div>
+    <div>
+       <label for="login-pass">Password</label>
+      <input id="login-pass" name="password" type="password" required placeholder="Enter password" />
+      <div><button type="submit">Login</button></div>
+    </div>
+      
+
+     <!-- 2. Registration form -->
+    <div>
+  <section id="f2">
+    <h2>2. Registration form (name, email, password, confirm)</h2>
+    
+      <label for="reg-name">Full Name</label>
+      <input id="reg-name" name="name" type="text" required />
+
+      <label for="reg-email">Email</label>
+      <input id="reg-email" name="email" type="email" required />
+
+      <label for="reg-pass">Password</label>
+      <input id="reg-pass" name="password" type="password" minlength="6" required />
+
+      <label for="reg-pass2">Confirm Password</label>
+      <input id="reg-pass2" name="password2" type="password" required />
+
+      <div><button type="submit">Register</button></div>
+  </section>
+    </div>
+
+
+    <!-- 3. Feedback textarea -->
+    <div>
+  <section id="f3">
+    <h2>3. Feedback (textarea)</h2>
+      <label for="fb">Your feedback</label>
+      <textarea id="fb" name="feedback" rows="5" placeholder="Write your feedback"></textarea>
+      <div><button type="Submit">Send</button></div>
+    </form>
+  </section>
+    </div>
+
+    <div>
+    <!-- 4. Survey with multiple choice -->
+  <section id="f4">
+    <h2>4. Survey (multiple-choice)</h2>
+    <label>Which feature do you like most?</label>
+    <select name="feature">
+    <option>Design</option>
+    <option>Support</option>
+    <option>Work</option>
+    <option>Draw</option>
+    </select>
+    <div><button type="submit">Submit</button></div>
+    </div>
+    
+      <!-- 5. Checkboxes for hobbies -->
+  <section id="f5">
+    <h2>5. Hobbies (checkboxes)</h2>
+      <fieldset>
+        <legend>Choose hobbies</legend>
+        <label class="flex"><input type="checkbox" name="hobby" value="reading"> Reading</label>
+        <label class="flex"><input type="checkbox" name="hobby" value="sports"> Carfting</label>
+        <label class="flex"><input type="checkbox" name="hobby" value="music"> Singing</label>
+        <label class="flex"><input type="checkbox" name="hobby" value="travel"> Travel</label>
+        <label class="flex"><input type="checkbox" name="hobby" value="travel"> Shopping </label>
+      </fieldset>
+      <div><button type="submit">Save</button></div>
+    </form>
+  </section>
+
+  
+</form>
+  </section>
+</body>
+</html>
